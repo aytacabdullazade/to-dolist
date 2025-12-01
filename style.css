@@ -38,7 +38,7 @@ h2 {
   margin-top: 10px;
 }
 
-/* 🔥 Auto-resize dəstəkləyən input */
+
 input[type="text"] {
   width: 250px;
   min-height: 20px;
@@ -139,7 +139,7 @@ img.photo2 {
   background-color: #833ae0;
 } */
 
-/* Gizli label */
+
 .sr-only {
   position: absolute;
   width: 1px;
@@ -194,14 +194,25 @@ li {
   border: 1px solid #c4c4c4;
 
 }
-html, body {
+/* html, body {
   height: auto !important;
   overflow-x: hidden !important;
   padding: 0;
   margin: 0;
+} */
+
+html, body {
+  overflow-x: hidden;
+  overflow-y: hidden; 
 }
-@media (min-width: 300px) and (max-width: 600px){
-  .todo-container{
-    margin-top: 10% !important;
+
+@media (max-width: 600px){
+  body {
+    justify-content: center !important;
+    align-items: center !important;
+  }
+
+  .todo-container {
+    margin-top: 0 !important;
   }
 }

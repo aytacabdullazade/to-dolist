@@ -27,7 +27,7 @@ document.addEventListener("DOMContentLoaded", () => {
     del.addEventListener("click", () => {
       li.remove();
 
-      // ⭐ Siyahı boşaldısa – yenidən gizlət
+      
       if (taskList.children.length === 0) {
         taskList.style.display = "none";
       }
