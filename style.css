@@ -201,10 +201,6 @@ li {
   margin: 0;
 } */
 
-html, body {
-  overflow-x: hidden;
-  overflow-y: hidden; 
-}
 
 @media (max-width: 600px){
   body {
@@ -215,4 +211,9 @@ html, body {
   .todo-container {
     margin-top: 0 !important;
   }
+}
+.icon:hover,
+#sortIcon:hover {
+  filter: brightness(0); 
+  cursor: pointer;
 }

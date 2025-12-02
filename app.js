@@ -69,3 +69,10 @@ document.addEventListener("DOMContentLoaded", () => {
     sortTasks();
   });
 });
+const input = document.getElementById("taskInput");
+const deleteIcon = document.querySelector(".icon");
+
+deleteIcon.addEventListener("click", () => {
+    input.value = "";  
+    input.focus();     
+});
